@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-  it(' login avec des credentiels valide',{tags:[ "@valid","@cedric"]}, () => { 
+it(' login with valid credantial ',{tags: ["@valid", "@abdou"]}, () => { 
     cy.visit("https://www.saucedemo.com")
-    cy.get("#user-name").type("standard_user1")
+    cy.get("#user-name").type("standard_user")
     cy.get("#password").type("secret_sauce")
     cy.get("#login-button").click()
     cy.get("span.title").should("be.visible")
